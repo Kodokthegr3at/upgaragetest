@@ -1,4 +1,4 @@
-# 🎯 エンジニアスキルチェック — チャレンジプログラム
+# 回答説明
 
 > **作成者:** HAL_Marbun  
 > **使用言語:** Java  
@@ -6,7 +6,7 @@
 
 ---
 
-## 📖 目次
+## 目次
 
 1. [このチャレンジとは？](#1-このチャレンジとは)
 2. [解くべき問題](#2-解くべき問題)
@@ -188,7 +188,7 @@ static void syncTime() throws Exception {
 }
 ```
 
-> 📌 `offset` を使って補正した時刻を取得するメソッド:
+> `offset` を使って補正した時刻を取得するメソッド:
 > ```java
 > static long now() {
 >     return System.currentTimeMillis() + offset;
@@ -229,7 +229,7 @@ while (true) {
 
 ## 6. 技術的な工夫
 
-### 🔄 スピンウェイト（精密タイミング）
+### スピンウェイト（精密タイミング）
 
 ```java
 while (now() < activesAt) {
@@ -247,11 +247,11 @@ while (now() < activesAt) {
 
 ---
 
-### ⏰ 時刻補正の効果
+### 時刻補正の効果
 
 ```
 補正なし → 毎回 ±5〜20ms ズレが蓄積 → すぐ500ms超過で終了
-補正あり → ±1〜3ms 程度に抑制    → 長時間継続可能 🎉
+補正あり → ±1〜3ms 程度に抑制    → 長時間継続可能 
 ```
 
 ---
@@ -307,5 +307,3 @@ SUCCESS: http://challenge.z2o.cloud/xxxxxxxx
 ```
 
 ---
-
-*Engineer Skill Check — README (日本語版)*
